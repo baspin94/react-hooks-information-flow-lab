@@ -1,6 +1,11 @@
-function Filter() {
+function Filter({ onCategoryChange}) {
     return (
-        <p>Hi, I'm a filter.</p>
+        <select name="filter" onChange={onCategoryChange}>
+            <option value="All">Filter by category</option>
+            <option value="Produce">Produce</option>
+            <option value="Dairy">Dairy</option>
+            <option value="Dessert">Dessert</option>
+        </select>
     )
 }
 
