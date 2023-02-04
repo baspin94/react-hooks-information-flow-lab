@@ -1,7 +1,11 @@
-function Header() {
+function Header({ isDarkMode, onDarkModeClick }) {
     return (
-        <p>Hi, I'm a header!</p>
-
+        <header>
+            <h2>Shopster</h2>
+            <button onClick={onDarkModeClick}>
+            {isDarkMode ? "Dark" : "Light"} Mode
+            </button>
+        </header>
     )
 }
 
